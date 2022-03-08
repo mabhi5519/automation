@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.aff.testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Checking resposnse&quot;, &quot;Optional[first test in API]&quot;)">runScenario("Checking resposnse", "Optional[first test in API]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.aff.restAssuredTest.RestAssuredTests" class="method navigator-link" hash-for-method="verifyResponseBody">verifyResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.aff.restAssuredTest.RestAssuredTests" class="method navigator-link" hash-for-method="verifyStatusCode">verifyStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.aff.testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify2&quot;, &quot;Optional[first test]&quot;)">runScenario("Verify2", "Optional[first test]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.aff.testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify21&quot;, &quot;Optional[second test]&quot;)">runScenario("Verify21", "Optional[second test]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.aff.testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify successful login&quot;, &quot;Optional[first test]&quot;)">runScenario("Verify successful login", "Optional[first test]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.aff.testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify1&quot;, &quot;Optional[first test]&quot;)">runScenario("Verify1", "Optional[first test]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.aff.testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify23&quot;, &quot;Optional[second test]&quot;)">runScenario("Verify23", "Optional[second test]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.aff.testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify22&quot;, &quot;Optional[second test]&quot;)">runScenario("Verify22", "Optional[second test]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.aff.restAssuredTest.RestAssuredTests" class="method navigator-link" hash-for-method="verifyResponseHeader">verifyResponseHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.aff.webTest.LoginTest" class="method navigator-link" hash-for-method="verifySuccessfulLogin">verifySuccessfulLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.aff.restAssuredTest.RestAssuredTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResponseBody">
+                  </a> <!-- verifyResponseBody -->
+                  <span class="method-name">verifyResponseBody</span>
+                  <div class="stack-trace">com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `com.aff.apimodel.User[]` out of START_OBJECT token
+ at [Source: (String)&quot;{}&quot;; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1139)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1093)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.handleNonArray(ObjectArrayDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:175)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:21)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4014)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3043)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$0.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.aff.restAssuredTest.RestAssuredTests.verifyResponseBody(RestAssuredTests.java:33)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verifies the response body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStatusCode">
+                  </a> <!-- verifyStatusCode -->
+                  <span class="method-name">verifyStatusCode</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected response status code is :200 Actual status code is 404 expected [200] but found [404]
+	at com.aff.restAssuredTest.RestAssuredTests.verifyStatusCode(RestAssuredTests.java:20)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verifies the response status code)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.aff.testRunner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Checking resposnse&quot;, &quot;Optional[first test in API]&quot;)">
+                  </a> <!-- runScenario("Checking resposnse", "Optional[first test in API]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Checking resposnse", "Optional[first test in API]")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
+	at com.aff.baseapi.BaseTestApi.verifyResponeStatusCode(BaseTestApi.java:61)
+	at stepDefinitions.BaseTest.i_verify_status_code_is(BaseTest.java:30)
+	at ✽.I verify status code is 200(file:///D:/oneFramework/automation/src/test/resources/features/apiTest.feature:6)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.aff.webTest.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessfulLogin">
+                  </a> <!-- verifySuccessfulLogin -->
+                  <span class="method-name">verifySuccessfulLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.aff.restAssuredTest.RestAssuredTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResponseHeader">
+                  </a> <!-- verifyResponseHeader -->
+                  <span class="method-name">verifyResponseHeader</span>
+                  <em>
+(verifies the content-type header for response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.aff.testRunner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify2&quot;, &quot;Optional[first test]&quot;)">
+                  </a> <!-- runScenario("Verify2", "Optional[first test]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify2", "Optional[first test]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify21&quot;, &quot;Optional[second test]&quot;)">
+                  </a> <!-- runScenario("Verify21", "Optional[second test]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify21", "Optional[second test]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify successful login&quot;, &quot;Optional[first test]&quot;)">
+                  </a> <!-- runScenario("Verify successful login", "Optional[first test]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify successful login", "Optional[first test]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify1&quot;, &quot;Optional[first test]&quot;)">
+                  </a> <!-- runScenario("Verify1", "Optional[first test]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify1", "Optional[first test]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify23&quot;, &quot;Optional[second test]&quot;)">
+                  </a> <!-- runScenario("Verify23", "Optional[second test]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify23", "Optional[second test]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify22&quot;, &quot;Optional[second test]&quot;)">
+                  </a> <!-- runScenario("Verify22", "Optional[second test]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify22", "Optional[second test]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.aff.restAssuredTest.RestAssuredTests&quot;/&gt;
+      &lt;class name=&quot;com.aff.testRunner.TestRunner&quot;/&gt;
+      &lt;class name=&quot;com.aff.webTest.BaseTest&quot;/&gt;
+      &lt;class name=&quot;com.aff.webTest.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.aff.webTest.TestData&quot;/&gt;
+      &lt;class name=&quot;stepDefinitions.BaseTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.aff.testRunner.TestRunner')
+data.setCell(0, 3, 19589);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.aff.testRunner.TestRunner')
+data.setCell(1, 3, 16915);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.aff.testRunner.TestRunner')
+data.setCell(2, 3, 14793);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.aff.testRunner.TestRunner')
+data.setCell(3, 3, 13467);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.aff.testRunner.TestRunner')
+data.setCell(4, 3, 10678);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.aff.testRunner.TestRunner')
+data.setCell(5, 3, 9786);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.aff.testRunner.TestRunner')
+data.setCell(6, 3, 7934);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifySuccessfulLogin')
+data.setCell(7, 2, 'com.aff.webTest.LoginTest')
+data.setCell(7, 3, 5588);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyResponseBody')
+data.setCell(8, 2, 'com.aff.restAssuredTest.RestAssuredTests')
+data.setCell(8, 3, 883);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyResponseHeader')
+data.setCell(9, 2, 'com.aff.restAssuredTest.RestAssuredTests')
+data.setCell(9, 3, 4);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyStatusCode')
+data.setCell(10, 2, 'com.aff.restAssuredTest.RestAssuredTests')
+data.setCell(10, 3, 1);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.aff.webTest.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">configureWaitTimes</span>
+                <span class="method-start">2886 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">maximizeBrowser</span>
+                <span class="method-start">2909 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">openStartURL</span>
+                <span class="method-start">3065 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">verifySuccessfulLogin</span>
+                <span class="method-start">5776 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.aff.restAssuredTest.RestAssuredTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11366 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyResponseBody</span>
+                <span class="method-start">15603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyResponseHeader</span>
+                <span class="method-start">16503 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyStatusCode</span>
+                <span class="method-start">16508 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.aff.testRunner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">16511 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Checking resposnse", "Optional[first test in API]")</span>
+                <span class="method-start">18111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify successful login", "Optional[first test]")</span>
+                <span class="method-start">18111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify2", "Optional[first test]")</span>
+                <span class="method-start">18111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify1", "Optional[first test]")</span>
+                <span class="method-start">18111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify22", "Optional[second test]")</span>
+                <span class="method-start">18112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify21", "Optional[second test]")</span>
+                <span class="method-start">18114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify23", "Optional[second test]")</span>
+                <span class="method-start">18114 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">37701 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.aff.webTest.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">stopBrowser</span>
+                <span class="method-start">38707 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

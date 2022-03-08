@@ -1,0 +1,12 @@
+com\aff\testRunner\TestRunner.class
+com\aff\baseapi\BaseTestApi.class
+stepDefinitions\ContextSteps.class
+com\aff\webTest\BaseTest.class
+com\aff\webTest\TestData.class
+stepDefinitions\Hooks.class
+com\aff\restAssuredTest\RestAssuredTests.class
+com\aff\baseDB\DBConnections.class
+stepDefinitions\GooglePage.class
+com\aff\baseDB\DBMethods.class
+com\aff\webTest\LoginTest.class
+stepDefinitions\BaseTest.class

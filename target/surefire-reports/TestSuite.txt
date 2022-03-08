@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 39.635 s <<< FAILURE! - in TestSuite
+verifyResponseBody(com.aff.restAssuredTest.RestAssuredTests)  Time elapsed: 0.902 s  <<< FAILURE!
+com.fasterxml.jackson.databind.exc.MismatchedInputException: 
+Cannot deserialize instance of `com.aff.apimodel.User[]` out of START_OBJECT token
+ at [Source: (String)"{}"; line: 1, column: 1]
+	at com.aff.restAssuredTest.RestAssuredTests.verifyResponseBody(RestAssuredTests.java:33)
+
+verifyStatusCode(com.aff.restAssuredTest.RestAssuredTests)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Expected response status code is :200 Actual status code is 404 expected [200] but found [404]
+	at com.aff.restAssuredTest.RestAssuredTests.verifyStatusCode(RestAssuredTests.java:20)
+
+runScenario(com.aff.testRunner.TestRunner)  Time elapsed: 16.913 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [404]
+
+tearDownClass(com.aff.testRunner.TestRunner)  Time elapsed: 20.593 s  <<< FAILURE!
+java.lang.reflect.InaccessibleObjectException: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not "opens java.lang" to unnamed module @3c22fc4c
+

@@ -1,0 +1,713 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-04T14:37:17.283Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10983460300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 16731500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.configureWaitTimes()"
+            }
+          },
+          {
+            "result": {
+              "duration": 153259600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.maximizeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4685090300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.openStartURL()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Checking resposnse",
+        "description": "",
+        "id": "first-test-in-api;checking-resposnse",
+        "after": [
+          {
+            "result": {
+              "duration": 188269700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.stopBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 55684300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I hit the base uri with string users",
+            "match": {
+              "location": "stepDefinitions.BaseTest.i_hit_the_uri_with_string()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I get non empty response",
+            "match": {
+              "location": "stepDefinitions.BaseTest.i_get_non_empty_response()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [200] but found [404]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:652)\r\n\tat org.testng.Assert.assertEquals(Assert.java:662)\r\n\tat com.aff.baseapi.BaseTestApi.verifyResponeStatusCode(BaseTestApi.java:61)\r\n\tat stepDefinitions.BaseTest.i_verify_status_code_is(BaseTest.java:30)\r\n\tat ✽.I verify status code is 200(file:///D:/oneFramework/automation/src/test/resources/features/apiTest.feature:6)\r\n",
+              "duration": 4609000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.BaseTest.i_verify_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "first test in API",
+    "description": "",
+    "id": "first-test-in-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/apiTest.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-04T14:37:17.104Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12887186800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 11001800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.configureWaitTimes()"
+            }
+          },
+          {
+            "result": {
+              "duration": 136340500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.maximizeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3778701300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.openStartURL()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify successful login",
+        "description": "",
+        "id": "first-test;verify-successful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 244149300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.stopBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 689197400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 926784200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter the credentials and click on submit",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_enter_the_credentials_and_click_on_submit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103305900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the login is successful",
+            "match": {
+              "location": "stepDefinitions.GooglePage.the_login_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-04T14:37:17.104Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3491332300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 11665900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.configureWaitTimes()"
+            }
+          },
+          {
+            "result": {
+              "duration": 130695800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.maximizeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2678812700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.openStartURL()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify1",
+        "description": "",
+        "id": "first-test;verify1",
+        "after": [
+          {
+            "result": {
+              "duration": 782779900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.stopBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 841333000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the login page",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 919331000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter the credentials and click on submit",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_enter_the_credentials_and_click_on_submit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 113661600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the login is successful",
+            "match": {
+              "location": "stepDefinitions.GooglePage.the_login_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-04T14:37:17.104Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9204683300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 25634600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.configureWaitTimes()"
+            }
+          },
+          {
+            "result": {
+              "duration": 148415700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.maximizeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2690889300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.openStartURL()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify2",
+        "description": "",
+        "id": "first-test;verify2",
+        "after": [
+          {
+            "result": {
+              "duration": 334699600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.stopBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 699605500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am on the login page",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 759094700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter the credentials and click on submit",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_enter_the_credentials_and_click_on_submit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117380700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the login is successful",
+            "match": {
+              "location": "stepDefinitions.GooglePage.the_login_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "first test",
+    "description": "",
+    "id": "first-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/firstTest.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-04T14:37:17.104Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1727691600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7519100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.configureWaitTimes()"
+            }
+          },
+          {
+            "result": {
+              "duration": 132631000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.maximizeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2919780000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.openStartURL()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify21",
+        "description": "",
+        "id": "second-test;verify21",
+        "after": [
+          {
+            "result": {
+              "duration": 305430000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.stopBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 717720000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 839153300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter the credentials and click on submit",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_enter_the_credentials_and_click_on_submit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 439994400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the login is successful",
+            "match": {
+              "location": "stepDefinitions.GooglePage.the_login_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-04T14:37:17.104Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5308735200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 17314600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.configureWaitTimes()"
+            }
+          },
+          {
+            "result": {
+              "duration": 139647700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.maximizeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2672012300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.openStartURL()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Verify22",
+        "description": "",
+        "id": "second-test;verify22",
+        "after": [
+          {
+            "result": {
+              "duration": 178902400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.stopBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 736992500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the login page",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 737400700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter the credentials and click on submit",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_enter_the_credentials_and_click_on_submit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74460000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the login is successful",
+            "match": {
+              "location": "stepDefinitions.GooglePage.the_login_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-04T14:37:17.104Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7220408500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 18714800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.configureWaitTimes()"
+            }
+          },
+          {
+            "result": {
+              "duration": 175581900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.maximizeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2820672500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.openStartURL()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify23",
+        "description": "",
+        "id": "second-test;verify23",
+        "after": [
+          {
+            "result": {
+              "duration": 618724500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.ContextSteps.stopBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 879435400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I am on the login page",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 788775500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter the credentials and click on submit",
+            "match": {
+              "location": "stepDefinitions.GooglePage.i_enter_the_credentials_and_click_on_submit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134562600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the login is successful",
+            "match": {
+              "location": "stepDefinitions.GooglePage.the_login_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "second test",
+    "description": "",
+    "id": "second-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/second.feature",
+    "tags": []
+  }
+]
